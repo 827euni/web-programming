@@ -1,0 +1,54 @@
+#menu {
+	text-align: center;
+}
+
+#menu li {
+	display : inline-block;
+	list-style-type : none;
+
+}
+
+#menu li a {
+	text-align:center;
+	display:absolute;
+	color : #D3D3D3;
+	text-decoration : none;
+	margin-left:300px;
+	padding-top:0px;
+	padding-bottom : 10px;
+}
+
+#menu li a:hover {
+	color : black;
+}
+
+.CName {
+	text-align : center;
+}
+
+.navi {
+	height : 10px;
+	display : flex;
+	align-items: center;
+	border-bottom-color: #D3D3D3;
+	font-size:12px;
+}
+
+.naviItem:hover{
+	color : black;
+}
+
+.naviItems {
+	display:flex;
+	margin-left :auto;
+	margin-right:10px;
+}
+
+.naviItem{
+	margin-left:10px;
+	color:#D3D3D3
+}
+
+#시네마이름 {
+	left:50%;
+}

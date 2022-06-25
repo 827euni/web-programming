@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>윤동주 시집</title>
+<style>
+		div{
+			width : 120px;
+			display : inline-block;
+			background : yellow;
+			position : absolute;
+			padding-left : 45px;
+			padding-right : 45px;
+			padding-top : 20px;
+			padding-bottom : 20px;
+			border-radius : 20px;
+			text-align : center;
+			font-size : 15px;
+			}
+</style>
+</head>
+
+<body>
+
+	<div id="서시"> 서시<br>윤동주 </div>
+	<div id="쉽게쓰여진시"style="left : 240px;"> 쉽게 쓰여진 시<br>윤동주</div>
+	<div id="별헤는밤" style="left: 480px;"> 별 헤는 밤<br>윤동주 </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<p id="text1"></p>
+	<p id="text2"></p>
+	<p id="text3"></p>
+	<script type = "text/javascript">
+
+		document.getElementById("서시").onclick = click_First;
+		document.getElementById("쉽게쓰여진시").onclick = click_Second;
+		document.getElementById("별헤는밤").onclick = click_Third;
+		
+		function click_First(id) {
+		if(document.getElementById("서시").style.background == "skyblue"){
+				document.getElementById("text1").innerHTML = "";		
+				document.getElementById("서시").style.background = "yellow";							
+		}
+		else {
+			document.getElementById("text1").innerHTML = "<h2>서시, 윤동주</h2> 죽는 날까지 하늘을 우러러<br> 한 점 부끄럼이 없기를,<br> 잎새에 이는 바람에도<br> 나는 괴로워했다.<br> 별을 노래하는 마음으로<br> 모든 죽어가는 것을 사랑해야지.<br> 그리고 나한테 주어진 길을<br> 걸어가야겠다.<br>";		
+			document.getElementById("서시").style.background = "skyblue";					
+			}
+		}
+		
+		function click_Second(id) {
+		if(document.getElementById("쉽게쓰여진시").style.background == "skyblue"){
+				document.getElementById("text2").innerHTML = "";		
+				document.getElementById("쉽게쓰여진시").style.background = "yellow";								
+		}
+		else {
+				document.getElementById("text2").innerHTML = "";		
+				document.getElementById("쉽게쓰여진시").style.background = "yellow";	
+			document.getElementById("text2").innerHTML = "<h2>쉽게 쓰여진 시, 윤동주</h2> 인생은 살기 어렵다는데<br> 시가 이렇게 쉽게 씌어지는 것은<br> 부끄러운 일이다<br>육첩방은 남의 나라<br> 창밖에 밤비가 속살거리는데,<br> 등불을 밝혀 어둠을 조금 내몰고<br> 시대처럼 올 아침을 기다리는 최후의 나.<br>";
+			document.getElementById("쉽게쓰여진시").style.background = "skyblue";					
+			}
+		}
+		
+		function click_Third(id) {
+		if(document.getElementById("별헤는밤").style.background == "skyblue"){
+				document.getElementById("text3").innerHTML = "";		
+				document.getElementById("별헤는밤").style.background = "yellow";						
+		}
+		else {
+			document.getElementById("text3").innerHTML = "<h2>별 헤는 밤, 윤동주</h2> 계절로 지나가는 하늘에는<br> 가을로 가득 차 있습니다.<br> 나는 아무 걱정도 없이<br>가을 속의 별들을 다 헤일 듯 합니다.<br> 가슴속에 하나 둘 새겨지는 별을<br> 이제 다 못 헤는 것은<br> 쉬이 아침이 오는 까닭이요,<br>내일 밤이 남은 까닭이요,<br>아직 나의 청춘이 다 하지 않은 까닭입니다.<br>";
+			document.getElementById("별헤는밤").style.background = "skyblue";		
+			}
+		}
+		
+			
+	</script>
+	
+	
+	
+
+	
+</body>
+</html>
+

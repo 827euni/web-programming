@@ -1,0 +1,128 @@
+#menu {
+	text-align: center;
+}
+
+#menu li {
+	display : inline-block;
+	list-style-type : none;
+
+}
+
+#menu li a {
+	text-align:center;
+	display:absolute;
+	color : #D3D3D3;
+	text-decoration : none;
+	margin-left:300px;
+	padding-top:0px;
+	padding-bottom : 10px;
+}
+
+#menu li a:hover {
+	color : black;
+}
+
+.CName {
+	text-align : center;
+}
+
+.navi {
+	height : 10px;
+	display : flex;
+	align-items: center;
+	border-bottom-color: #D3D3D3;
+	font-size:12px;
+}
+
+.naviItem:hover{
+	color : black;
+}
+
+.naviItems {
+	display:flex;
+	margin-left :auto;
+	margin-right:10px;
+}
+
+.naviItem{
+	margin-left:10px;
+	color:#D3D3D3
+}
+
+#시네마이름 {
+	left:50%;
+}
+
+.확인란 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+
+
+.상세정보버튼1{
+	position : absolute;
+	padding-top : 7px;
+	padding-bottom : 7px;
+	padding-left : 20px;
+	padding-right : 20px;
+	margin : 0px;
+	border-radius : 5px;
+	left : 30%;
+	transform:translate(-50%);
+	color : white;
+	font-size : 16px;
+	background-color : #436BFF;
+	}
+	
+.상세정보버튼1:hover {
+	background-color : #FC6551;
+}
+
+.상세정보버튼2{
+	position : absolute;
+	padding-top : 7px;
+	padding-bottom : 7px;
+	padding-left : 20px;
+	padding-right : 20px;
+	margin : 0px;
+	border-radius : 5px;
+	left : 50%;
+	transform:translate(-50%);
+	color : white;
+	font-size : 16px;
+	background-color : #436BFF;
+	}
+	
+.상세정보버튼2:hover {
+	background-color : #FC6551;
+}
+
+
+.상세정보버튼3{
+	position : absolute;
+	padding-top : 7px;
+	padding-bottom : 7px;
+	padding-left : 20px;
+	padding-right : 20px;
+	margin : 0px;
+	border-radius : 5px;
+	left : 70%;
+	transform:translate(-50%);
+	color : white;
+	font-size : 16px;
+	background-color : #436BFF;
+	}
+	
+.상세정보버튼3:hover {
+	background-color : #FC6551;
+}
+
+div{
+	text-align: center;
+}
+
+

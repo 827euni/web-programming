@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>움직이는 글자</title>
+	<style>
+		div{
+			display : inline-block;
+			position : absolute;
+			padding-top : 15px;
+			padding-bottom : 15px;
+			padding-left : 30px;
+			padding-right : 30px;
+			border-radius : 60px;
+			color : white;
+			text-align : center;
+			font-size : 30px
+			}
+		@keyframes wwwANI {
+			0% {left : 0%}
+			50% {left : 50%; font-size : 600%;}
+			100% {left : 0%}
+			}
+
+		@keyframes html5ANI {
+			0% {right : 0%}
+			50% {right : 50%; top:50%; font-size : 600%;}
+			100% {right : 0%}
+			}
+			
+		@keyframes javascriptANI {
+			0% {left : 0%}
+			50% {left : 50%; bottom:45%;font-size : 600%;}
+			100% {left : 0%}
+			}
+			
+		@keyframes css3ANI {
+			0% {right : 0%}
+			50% {right : 50%; font-size : 600%;}
+			100% {right : 0%}
+			}
+			
+		@keyframes 180deg {
+			0% {transform: rotate(0deg);}
+			50% {transform: rotate(180deg);}
+			100% {transform: rotate(0deg);}
+			}		
+		div#www {
+				animation-name : wwwANI;
+				animation-duration : 10s;
+				animation-iteration-count : infinite;
+				}
+				
+		div#HTML5 {
+				animation-name : html5ANI;
+				animation-duration : 10s;
+				animation-iteration-count : infinite;
+				}
+
+		div#JavaScript {
+				animation-name : javascriptANI;
+				animation-duration : 10s;
+				animation-iteration-count : infinite;
+				}
+
+		div#CSS3 {
+				animation-name : css3ANI;
+				animation-duration : 10s;
+				animation-iteration-count : infinite;
+				}
+		div#HTML5:hover {
+					transform : rotate(180deg);
+					transition : transform 1s;
+					}
+		div#JavaScript:hover {
+					transform : rotate(180deg);
+					transition : transform 1s;
+					}
+		div#CSS3:hover {
+					transform : rotate(180deg);
+					transition : transform 1s;
+					}
+		div#www:hover {
+					transform : rotate(180deg);
+					transition : transform 1s;
+					}
+
+		
+		
+	</style>
+	
+<body>
+	<div id="www"style="background : black; left:0%;"> <strong>WWW</strong> </div>
+	<div id="HTML5"style="background : red; right:0%; top:0%;"> <strong>HTML5</strong></div>
+	<div id="JavaScript" style="background : blue; left:0%; bottom:0%;"> <strong>JavaScript</strong> </div>
+	<div id="CSS3" style="background : green; right:0%; bottom:0%"> <strong>CSS3</strong> </div>
+</body>

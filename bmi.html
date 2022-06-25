@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>비만도 판정</title>
+	<style>
+		span {
+		font-size:200%;
+		}
+	</style>
+</head>
+
+<body>
+
+<table border="1">
+	<script type="text/javascript">
+	
+	var name = prompt("이름을 입력하세요...");
+	var hei = prompt(name+"님의 키를 입력하세요...");
+	var wei = prompt(name+"님의 몸무게를 입력하세요...");
+	var cm = (hei/100);
+	var bmi = (wei/(cm*cm)).toFixed(1);
+	
+	document.write("<tr><th>이름</th>");
+	document.write("<th>"+name+"</th></tr>");
+	
+	document.write("<tr><th>키</th>");
+	document.write("<th>"+hei+"cm</th></tr>");
+	
+	document.write("<tr><th>몸무게</th>");
+	document.write("<th>"+wei+"kg</th></tr>");
+	
+	document.write("<tr><th>BMI</th>");
+	document.write("<th>"+bmi+"</th></tr>");
+	
+	if (bmi<18.5){
+			document.write("<tr><th>비만도</th>");
+			document.write("<th><span>"+"저체중".fontcolor("blue")+"</span></th></tr>");
+			}
+	
+	else if ((18.5<=bmi)&&(bmi<25.0)){
+			document.write("<tr><th>비만도</th>");
+			document.write("<th><span>"+"정상".fontcolor("blue")+"</span></th></tr>");
+			}
+
+	else if ((25.0<=bmi)&&(bmi<30.0)){
+			document.write("<tr><th>비만도</th>");
+			document.write("<th><span>"+"과체중".fontcolor("orange")+"</span></th></tr>");
+			}
+	else {
+			document.write("<tr><th>비만도</th>");
+			document.write("<th><span>"+"비만".fontcolor("red")+"</span></th></tr>");	
+			}
+			
+	</script>
+</table>
+</body>
+</html>

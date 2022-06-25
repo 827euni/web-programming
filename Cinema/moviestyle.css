@@ -1,0 +1,198 @@
+#menu {
+	text-align: center;
+}
+
+#menu li {
+	display : inline-block;
+	list-style-type : none;
+
+}
+
+#menu li a {
+	text-align:center;
+	display:absolute;
+	color : #D3D3D3;
+	text-decoration : none;
+	margin-left:300px;
+	padding-top:0px;
+	padding-bottom : 10px;
+}
+
+#menu li a:hover {
+	color : black;
+}
+
+.CName {
+	text-align : center;
+}
+
+.navi {
+	height : 10px;
+	display : flex;
+	align-items: center;
+	border-bottom-color: #D3D3D3;
+	font-size:12px;
+}
+
+.naviItem:hover{
+	color : black;
+}
+
+.naviItems {
+	display:flex;
+	margin-left :auto;
+	margin-right:10px;
+}
+
+.naviItem{
+	margin-left:10px;
+	color:#D3D3D3
+}
+
+#시네마이름 {
+	left:50%;
+}
+
+.영화종류 {
+	text-align : center;
+	display : flex;
+	margin-left : auto;
+	margin-right: auto;
+}
+
+.낙하 {
+	position : absolute;
+	left : 50%;
+	transform:translate(-50%);
+}
+
+.노란여우와푸른고양이 {
+	position : absolute;
+	left : 30%;
+	transform:translate(-50%,0%);
+}
+
+.두근두근내남자대작전 {
+	position : absolute;
+	left : 70%;
+	transform:translate(-50%,0%);
+}
+
+
+.예매취소 {
+	position : absolute;
+	left : 70%;
+	transform:translate(-50%,0%);
+}
+
+.예매버튼{
+	position : absolute;
+	padding-top : 7px;
+	padding-bottom : 7px;
+	padding-left : 20px;
+	padding-right : 20px;
+	margin : 0px;
+	border-radius : 5px;
+	left : 50%;
+	transform:translate(-50%);
+	color : white;
+	font-size : 16px;
+	background-color : #436BFF;
+	}
+	
+.예매버튼:hover {
+	background-color : #FC6551;
+}
+
+	
+.낙하포스터:before, .노란여우와푸른고양이포스터:before, .두근두근내남자대작전포스터:before {
+	content: "";
+	position :absolute;
+	width:100%;
+	height:82.7%;
+	transition: .5s;
+}
+
+.낙하포스터:hover:before, .노란여우와푸른고양이포스터:hover:before,.두근두근내남자대작전포스터:hover:before   {
+	background:rgba(0,0,0,0.5);
+}
+
+.낙하포스터 p {
+	position : absolute;
+	top: 10%;
+	left:20px;
+	right:20px;
+	opacity : 0;
+	transition : 0.5s;
+	font-size : 15px;
+}
+
+.낙하포스터:hover p {
+	opacity : 1;
+	color: white;
+}
+
+.낙하포스터 span {
+	font-size: 20px;
+}
+
+.노란여우와푸른고양이포스터 p {
+	position : absolute;
+	top: 10%;
+	left:20px;
+	right:20px;
+	opacity : 0;
+	transition : 0.5s;
+	font-size : 15px;
+}
+
+.노란여우와푸른고양이포스터:hover p {
+	opacity : 1;
+	color: white;
+}
+
+.노란여우와푸른고양이포스터 span {
+	font-size: 20px;
+}
+
+.두근두근내남자대작전포스터 p {
+	position : absolute;
+	top: 10%;
+	left:20px;
+	right:20px;
+	opacity : 0;
+	transition : 0.5s;
+	font-size : 15px;
+}
+
+.두근두근내남자대작전포스터:hover p {
+	opacity : 1;
+	color: white;
+}
+
+.두근두근내남자대작전포스터 span {
+	font-size: 20px;
+}
+
+div {
+	text-decoration: none;
+}
+
+.상세정보버튼{
+	position : absolute;
+	padding-top : 7px;
+	padding-bottom : 7px;
+	padding-left : 20px;
+	padding-right : 20px;
+	margin : 0px;
+	border-radius : 5px;
+	left : 50%;
+	transform:translate(-50%);
+	color : white;
+	font-size : 16px;
+	background-color : #436BFF;
+	}
+	
+.상세정보버튼:hover {
+	background-color : #FC6551;
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>은아시네마</title>
+<link rel="stylesheet" href="각영화예매.css">
+<div class="navi">
+		<div class="naviItems">
+			<div class="naviItem"> 로그인</div>
+			<div class="naviItem"> 마이페이지</div>
+		</div>
+	</div>
+<div class="main">
+	<div class="CName">
+	<br><a href="main.html">
+		<img src="media/은아시네마이름.jpg" width="141" height="141" alt="은아시네마이름">
+	<br></a>
+	</div>
+	
+	<div>
+		<ul id="menu">
+			<li><a href="movie.html"><br>영화</a></li>
+			<li><a href="book.html"><br>예매</a></li>
+			<li><a href="theater.html"><br>영화관</a></li>
+		</ul>
+	</nav>
+	</div>
+</div>
+<hr>
+</head>
+
+<body bgcolor="white">
+<div id="폼">
+<form>
+<h3>영화 : <select id="id_value" name="movieName">
+						<option value="노란여우와 푸른고양이" selected>노란여우와 푸른고양이</option>
+
+						</select><br></h3>
+		<br>
+	
+		날짜 : <label><input type="radio" id="ls_date" name="date" value="12월 10일 금요일" selected>12월 10일 금요일<br></label>
+		시간 : 
+				<label><input type="radio" id="ls_time" name="time" value="15:00" selected>15:00<br></label>
+			<br>
+		<table id="table" border = "1">
+			<tr>
+				<td id="A-01">A-01</td>
+				<td id="A-02">A-02</td>
+				<td id="A-03">A-03</td>
+				<td id="A-04">A-04</td>
+				<td id="A-05">A-05</td>
+				<td id="A-06">A-06</td>
+				<td id="A-07">A-07</td>
+				<td id="A-08">A-08</td>
+			</tr>
+	
+			<tr>
+
+				<td id="B-01">B-01</td>
+				<td id="B-02">B-02</td>
+				<td id="B-03">B-03</td>
+				<td id="B-04">B-04</td>
+				<td id="B-05">B-05</td>
+				<td id="B-06">B-06</td>
+				<td id="B-07">B-07</td>
+				<td id="B-08">B-08</td>
+
+
+			</tr>
+
+</table>
+<br>
+<input type="button" value="예매" onclick="addItem();"><br>
+<script type="text/javascript">
+var ls = window.localStorage; 
+var ls_key = document.getElementById("id_key");
+var ls_value = document.getElementById("id_value");
+var prt = document.getElementById("id_prt");
+var y =[]
+if (!ls) {
+alert("로컬 스토리지를 지원하지 않습니다.");
+}
+function addItem() {
+var x =[ls_date.value, ls_time.value, count];
+ls.setItem(ls_value.value, JSON.stringify(x));
+ls.setItem(" 노란여우와 푸른고양이 ", JSON.stringify(y));
+alert("총 가격은 " + count*6000 + "원 입니다.");
+
+}
+
+
+		document.getElementById("A-01").onclick = click_A1;
+		document.getElementById("A-02").onclick = click_A2;
+		document.getElementById("A-03").onclick = click_A3;
+		document.getElementById("A-04").onclick = click_A4;
+		document.getElementById("A-05").onclick = click_A5;
+		document.getElementById("A-06").onclick = click_A6;
+		document.getElementById("A-07").onclick = click_A7;
+		document.getElementById("A-08").onclick = click_A8;
+
+		document.getElementById("B-01").onclick = click_B1;
+		document.getElementById("B-02").onclick = click_B2;
+		document.getElementById("B-03").onclick = click_B3;
+		document.getElementById("B-04").onclick = click_B4;
+		document.getElementById("B-05").onclick = click_B5;
+		document.getElementById("B-06").onclick = click_B6;
+		document.getElementById("B-07").onclick = click_B7;
+		document.getElementById("B-08").onclick = click_B8;
+
+		var count=0;
+		
+		function click_A1(id) {
+		if(document.getElementById("A-01").style.background == "red"){		
+				document.getElementById("A-01").style.background = "white";	
+				
+
+		}
+		else {
+			document.getElementById("A-01").style.background = "red";	
+			count=count+1;
+			y.push("A-01")
+			}
+		}
+		
+		function click_A2(id) {
+		if(document.getElementById("A-02").style.background == "red"){		
+				document.getElementById("A-02").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("A-02").style.background = "red";	
+			count=count+1;
+			y.push("A-02")
+			}
+		}
+		
+		function click_A3(id) {
+		if(document.getElementById("A-03").style.background == "red"){		
+				document.getElementById("A-03").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("A-03").style.background = "red";	
+			count=count+1;
+			y.push("A-03")
+			}
+		}
+		
+		function click_A4(id) {
+		if(document.getElementById("A-04").style.background == "red"){		
+				document.getElementById("A-04").style.background = "white";	
+				
+
+		}
+		else {
+			document.getElementById("A-04").style.background = "red";	
+			count=count+1;
+			y.push("A-04")
+			}
+		}
+		
+		function click_A5(id) {
+		if(document.getElementById("A-05").style.background == "red"){		
+				document.getElementById("A-05").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("A-05").style.background = "red";	
+			count=count+1;
+			y.push("A-05")
+			}
+		}
+		
+		function click_A6(id) {
+		if(document.getElementById("A-06").style.background == "red"){		
+				document.getElementById("A-06").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("A-06").style.background = "red";	
+			count=count+1;
+			y.push("A-06")
+			}
+		}
+
+		function click_A7(id) {
+		if(document.getElementById("A-07").style.background == "red"){		
+				document.getElementById("A-07").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("A-07").style.background = "red";	
+			count=count+1;
+			y.push("A-07")
+			}
+		}
+
+		function click_A8(id) {
+		if(document.getElementById("A-08").style.background == "red"){		
+				document.getElementById("A-08").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("A-08").style.background = "red";	
+			count=count+1;
+			y.push("A-08")
+			}
+		}		
+		
+
+		function click_B1(id) {
+		if(document.getElementById("B-01").style.background == "red"){		
+				document.getElementById("B-01").style.background = "white";	
+				
+
+		}
+		else {
+			document.getElementById("B-01").style.background = "red";	
+			count=count+1;
+			y.push("B-01")
+			}
+		}
+		
+		function click_B2(id) {
+		if(document.getElementById("B-02").style.background == "red"){		
+				document.getElementById("B-02").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("B-02").style.background = "red";	
+			count=count+1;
+			y.push("B-02")
+			}
+		}
+		
+		function click_B3(id) {
+		if(document.getElementById("B-03").style.background == "red"){		
+				document.getElementById("B-03").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("B-03").style.background = "red";	
+			count=count+1;
+			y.push("B-03")
+			}
+		}
+		
+		function click_B4(id) {
+		if(document.getElementById("B-04").style.background == "red"){		
+				document.getElementById("B-04").style.background = "white";	
+				
+
+		}
+		else {
+			document.getElementById("B-04").style.background = "red";	
+			count=count+1;
+			y.push("B-04")
+			}
+		}
+		
+		function click_B5(id) {
+		if(document.getElementById("B-05").style.background == "red"){		
+				document.getElementById("B-05").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("B-05").style.background = "red";	
+			count=count+1;
+			y.push("B-05")
+			}
+		}
+		
+		function click_B6(id) {
+		if(document.getElementById("B-06").style.background == "red"){		
+				document.getElementById("B-06").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("B-06").style.background = "red";	
+			count=count+1;
+			y.push("B-06")
+			}
+		}
+
+		function click_B7(id) {
+		if(document.getElementById("B-07").style.background == "red"){		
+				document.getElementById("B-07").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("B-07").style.background = "red";	
+			count=count+1;
+			y.push("B-07")
+			}
+		}
+
+		function click_B8(id) {
+		if(document.getElementById("B-08").style.background == "red"){		
+				document.getElementById("B-08").style.background = "white";	
+
+		}
+		else {
+			document.getElementById("B-08").style.background = "red";	
+			count=count+1;
+			y.push("B-08")
+			}
+		}		
+</script>
+</form>
+</div>
+</body>
+</html>

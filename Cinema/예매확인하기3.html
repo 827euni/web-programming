@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>은아시네마</title>
+<link rel="stylesheet" href="예매확인하기.css">
+<div class="navi">
+		<div class="naviItems">
+			<div class="naviItem"> 로그인</div>
+			<div class="naviItem"> 마이페이지</div>
+		</div>
+	</div>
+<div class="main">
+	<div class="CName">
+	<br><a href="main.html">
+		<img src="media/은아시네마이름.jpg" width="141" height="141" alt="은아시네마이름">
+	<br></a>
+	</div>
+	
+	<div>
+		<ul id="menu">
+			<li><a href="movie.html"><br>영화</a></li>
+			<li><a href="book.html"><br>예매</a></li>
+			<li><a href="theater.html"><br>영화관</a></li>
+		</ul>
+	</nav>
+	</div>
+</div>
+<hr>
+</head>
+
+<body bgcolor="white" onload="pageload();">
+<div class="확인란">
+	<div class="예매확인리스트">
+	<br>
+		<img src="media/상세예매확인리스트.jpg" width="1080" height="200" alt="예매확인리스트">
+	<br>
+	</div>		
+<p id="id_prt"> </p><br>
+</div>	
+<div class=버튼">
+<input type="button" value="취소" onclick=deleteItem();><br>
+			</div>
+<script type="text/javascript">
+var ls = window.localStorage; // 로컬 스토리지
+var ls_key = document.getElementById("id_key");
+var ls_value = document.getElementById("id_value");
+var prt = document.getElementById("id_prt");
+var y =[]
+if (!ls) {
+alert("로컬 스토리지를 지원하지 않습니다.");
+}
+function pageload() {
+prt.innerHTML = "";
+var key1=localStorage.key(3);
+var key2=localStorage.key(4);
+var n1 = JSON.parse(ls.getItem(ls.key(3)))[0];
+var n2 = JSON.parse(ls.getItem(ls.key(3)))[1];
+var n3 = JSON.parse(ls.getItem(ls.key(3)))[2];
+var n4 = JSON.parse(ls.getItem(ls.key(4)))[0];
+var n5 = JSON.parse(ls.getItem(ls.key(4)))[1];
+var n6 = JSON.parse(ls.getItem(ls.key(4)))[2];
+prt.innerHTML += key1+ " : " + n1 +"&nbsp;&nbsp;"+n2+"&nbsp;&nbsp;"+n3+"<br>"+key2+ " : " + n4 +"&nbsp;&nbsp;"+n5+"&nbsp;&nbsp;"+n6+"<br>"
+}
+
+function deleteItem() {
+var key1=localStorage.key(3);
+var key2=localStorage.key(4);
+ls.removeItem(key1);
+ls.removeItem(key2);}
+
+</script>
+
+
+</body>
+</html>

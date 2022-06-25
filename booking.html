@@ -1,0 +1,45 @@
+<!DOCYPE.html>
+<html>
+<body>
+	<h3>레스토랑 예약하기</h3>
+	<form>
+	<fieldset>
+		<legend>예약자 정보</legend>
+		<label>예약자 : <input type="text" value=""></label><br>
+		<label>휴대폰 : <input type="tel" placeholder="01*-000*-0000"
+					pattern="01[0-9]{1}-[0-9]{3,4}-[0-9]{4}"/></label><br>
+		<label>예약인원 : <select name="number">
+						<option value="1">2명</option>
+						<option value="2">3명</option>
+						<option value="3" selected>4명</option>
+						<option value="4">5명</option>
+						<option value="5">6명</option>
+						<option value="6">7명</option>
+						<option value="7">8명</option>
+						</label>
+					   </select>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>일자 선택 및 시간 선택</legend>
+		<label>날짜 : <input type ="date" value="2021-10-01"></label><br>
+		<label>시간 : <input type ="time" value="18:00"></label><br>
+		<label>위치 :
+			<label>본관<input type="radio" name="where" value="1" checked></label>
+			<label>별관<input type="radio" name="where" value="2"></label><br>
+			</label>
+		<label>옵션 : 
+			<label><input type="checkbox" value="1">단독룸</label>
+			<label><input type="checkbox" value="2">아기의자</label>
+			<label><input type="checkbox" value="3">채식요리</label>
+			</label>
+			
+	</fieldset>
+	<br>
+	
+	<button type="submit">예약</button>
+	<button type="reset">취소</button>
+	</form>
+	</body>
+	</html>
+	
